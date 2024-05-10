@@ -51,13 +51,7 @@ app.get('/boom', async (req, res) => {
 
 app.post('/player', async (req, res) => {
 
-  try{
-    console.log(req.body)
-    res.status(200).send({ message: 'Este es un endpoint POST/PUT' });
-     }
-     catch(e){ //si hay un error cae aca//
-     res.status(500).send({'error': 'Internal server error'})
-     }
+
 }
 );
 
