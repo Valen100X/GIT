@@ -4,7 +4,7 @@ const path = require('path'); // Import path module
 const { error } = require('console');
 
 const app = express();
-const port = 3001;
+const port = 3002;
 
 // Allow all cross-origin requests
 app.use(cors());
