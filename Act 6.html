@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TPN1</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+<body>
+
+        <form action="/action_page.php">
+             <div class="mainform"> 
+            <label for="fname">Nombre:</label><br>
+            <input type="text" id="fname" name="fname" ><br><br>    
+
+            <label for="lname">Apellido:</label><br>
+            <input type="text" id="lname" name="lname" ><br><br>
+
+            <label for="edadi">Edad:</label><br>
+            <input type="number" id="edadi" name="edadi" ><br><br>
+
+            <label for="Email">Email:</label><br>
+            <input type="email" id="Email" name="Email" ><br><br>
+            </form>
+             </div>
+
+             <div>
+                    <label for="categoria">Seleccion de Categoría:</label>
+                    <select name="categoria" id="categoria">
+                      <option value="sub-12">sub-12</option>
+                      <option value="sub-15">sub-15</option>
+                      <option value="sub-18">sub-18</option>
+                    </select>
+                    
+              
+             </div>
+            
+             <div>
+                <form>
+                <p> Seleccion de Posición:  </p>
+                <label for="delantero">Delantero</label>
+                <input type="radio" name="posicion" value="delantero"  Delantero> <br><br>
+
+                <label for="mediocampista">Mediocampista</label>
+                <input type="radio" name="posicion" value="mediocampista"  Mediocampista><br><br>
+
+                <label for="defensa">Defensa</label>
+                <input type="radio" name="posicion" value="defensa" Defensa > <br><br>
+
+                <label for="Portero">Portero</label>
+                <input type="radio" name="posicion" value="portero"  Portero > <br><br>
+                </form>
+
+             </div>
+
+             <div>
+                <label for="terminos">Acepto los terminos y condiciones</label>
+                <input type="checkbox" id="terminos" name="terminos" value="terminos">
+
+             </div>
+
+         <div>
+            <input type="submit" value="Submit">
+         </div>
+
+</body>
+</html>
