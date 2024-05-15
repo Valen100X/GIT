@@ -5,69 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TPN1</title>
     <style>
-        body{
+        body {
             text-align: center;
+        }
+        .mainform {
+            display: inline-block;
+            text-align: left;
+        }
+        .form-group {
+            margin-bottom: 15px;
         }
     </style>
 </head>
-
-
 <body>
 
-        <form action="/action_page.php">
-             <div class="mainform"> 
+    <h1>Formulario de Registro para Torneo de Fútbol</h1>
+
+    <form action="/action_page.php"  class="mainform">
+      
+        <div class="form-group">
             <label for="fname">Nombre:</label><br>
-            <input type="text" id="fname" name="fname" ><br><br>    
+            <input type="text" id="fname" name="fname" ><br>
+        </div>
 
+        <div class="form-group">
             <label for="lname">Apellido:</label><br>
-            <input type="text" id="lname" name="lname" ><br><br>
+            <input type="text" id="lname" name="lname" ><br>
+        </div>
 
+        <div class="form-group">
             <label for="edadi">Edad:</label><br>
-            <input type="number" id="edadi" name="edadi" ><br><br>
+            <input type="number" id="edadi" name="edadi" ><br>
+        </div>
 
+        <div class="form-group">
             <label for="Email">Email:</label><br>
-            <input type="email" id="Email" name="Email" ><br><br>
-            </form>
-             </div>
+            <input type="email" id="Email" name="Email" ><br>
+        </div>
 
-             <div>
-                    <label for="categoria">Seleccion de Categoría:</label>
-                    <select name="categoria" id="categoria">
-                      <option value="sub-12">sub-12</option>
-                      <option value="sub-15">sub-15</option>
-                      <option value="sub-18">sub-18</option>
-                    </select>
-                    
-              
-             </div>
-            
-             <div>
-                <form>
-                <p> Seleccion de Posición:  </p>
-                <label for="delantero">Delantero</label>
-                <input type="radio" name="posicion" value="delantero"  Delantero> <br><br>
+        
+        <div class="form-group">
+            <label for="categoria">Selección de Categoría:</label><br>
+            <select name="categoria" id="categoria" >
+                <option value="">Seleccione una categoría</option>
+                <option value="sub-12">sub-12</option>
+                <option value="sub-15">sub-15</option>
+                <option value="sub-18">sub-18</option>
+            </select><br>
+        </div>
 
-                <label for="mediocampista">Mediocampista</label>
-                <input type="radio" name="posicion" value="mediocampista"  Mediocampista><br><br>
+       
+        <div class="form-group">
+            <p>Selección de Posición:</p>
+            <label for="delantero">
+                <input type="radio" id="delantero" name="posicion" value="delantero" > Delantero
+            </label><br>
+            <label for="mediocampista">
+                <input type="radio" id="mediocampista" name="posicion" value="mediocampista" > Mediocampista
+            </label><br>
+            <label for="defensa">
+                <input type="radio" id="defensa" name="posicion" value="defensa" > Defensa
+            </label><br>
+            <label for="portero">
+                <input type="radio" id="portero" name="posicion" value="portero" > Portero
+            </label><br>
+        </div>
 
-                <label for="defensa">Defensa</label>
-                <input type="radio" name="posicion" value="defensa" Defensa > <br><br>
+        
+        <div class="form-group">
+            <label for="terminos">
+                <input type="checkbox" id="terminos" name="terminos" value="terminos" > Acepto los términos y condiciones
+            </label><br>
+        </div>
 
-                <label for="Portero">Portero</label>
-                <input type="radio" name="posicion" value="portero"  Portero > <br><br>
-                </form>
-
-             </div>
-
-             <div>
-                <label for="terminos">Acepto los terminos y condiciones</label>
-                <input type="checkbox" id="terminos" name="terminos" value="terminos">
-
-             </div>
-
-         <div>
+        
+        <div class="form-group">
             <input type="submit" value="Submit">
-         </div>
+        </div>
+    </form>
 
 </body>
 </html>
